@@ -1,0 +1,114 @@
+.uk-list {
+    position: relative;
+    width: 100%;
+    & > li:not(.uk-nav-header) {
+        position: relative;
+        cursor: pointer;
+        color: #bf0a0a;
+        font-weight: 700;
+        width: 100%;
+        height: 100%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        margin-top: 0;
+        &::after {
+            content: '';
+            position: absolute;
+            right: 0;
+            top: 4px;
+            bottom: 4px;
+            width: 36px;
+            background-color: transparent;
+            border: 2px solid #bf0a0a;
+            border-radius: 30px;
+        }
+        &.added {
+            color: #43c124;
+            font-weight: 200;
+            &::after {
+                border: none;
+                background-color: #43c124;
+            }
+        }
+    }
+    & > li.uk-nav-header {
+        margin-top: 0;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+}
+
+p.success {
+    color: #1d9100;
+}
+
+.overlay {
+    position: fixed;
+    top: -30px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding-top: 30px;
+    pointer-events: none;
+    transform: translateY(-100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    transition: 450ms all ease-in;
+    &.shown {
+        transform: translateY(0);
+        pointer-events: all;
+    }
+}
+.bg-green {
+    background-color: #1d9100;
+    color: #fff;
+    & > * {
+        color: #fff;
+    }
+}
+.check-icon {
+    background-color: #fff;
+    color: #1d9100;
+    padding: 20px 20px;
+    border-radius: 50%;
+}
+
+.sticky-top {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    padding-top: 4px;
+}
+
+.fixed {
+    position: fixed;
+    left: 0;
+    right: 0;
+    &\--bottom {
+        bottom: 0;
+    }
+}
+
+aside {
+    padding: 0;
+}
+
+.uk-progress.progress-bar {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    margin: 0;
+    padding: 0;
+    border-radius: 0;
+    height: 8px;
+    &::-moz-progress-bar {
+        background: #43c124;
+    }
+    &::-webkit-progress-bar {
+        border-radius: 0;
+    }
+    &::-webkit-progress-value {
+        background: #43c124;
+    }
+}
