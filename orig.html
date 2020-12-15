@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes"> <!-- Enable WPA -->
+    <meta name="apple-mobile-web-app-title" content="WPA"> <!-- Title -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"> <!-- Status bar -->
+    <title>Checklist</title>
+    <link rel="stylesheet" href="./dist/index.css">
+</head>
+<body>
+    <main class="uk-container">
+        <section class="uk-section uk-section-default">
+            <div class="sticky-top uk-background-default">
+                <h4 class="uk-text-center">Total (<span class="total-count">0</span> / <span class="items-total">17</span>)</h4>
+            </div>
+            <p class="uk-text-center" id="statusMsg">You don't have everything yet</p>
+            <ul class="uk-list uk-list-divider">
+                <li class="uk-nav-header uk-text-center">Main pocket (<span class="main-count">0</span> / <span class="main-total">6</span>)</li>
+                <li class="main">Pití</li>
+                <li class="main">Nabíječka</li>
+                <li class="main">Klíče od sejfu</li>
+                <li class="main">AirPods</li>
+                <li class="main">Hořčík, vápník</li>
+                <li class="uk-nav-header uk-text-center">Inner pocket (<span class="inner-count">0</span> / <span class="inner-total">3</span>)</li>
+                <li class="inner">2x Kinder</li>
+                <li class="inner">Peněženka</li>
+                <li class="inner">Sirky</li>
+                <li class="uk-nav-header uk-text-center">Top pocket (<span class="top-count">0</span> / <span class="top-total">3</span>)</li>
+                <li class="top">Rivo</li>
+                <li class="top">Sluchátka</li>
+                <li class="top">Klíče</li>
+                <li class="uk-nav-header uk-text-center">Side pockets (<span class="side-count">0</span> / <span class="side-total">3</span>)</li>
+                <li class="side">Cigára</li>
+                <li class="side">Dezinfekce</li>
+                <li class="side">Kapesníky</li>
+                <li class="uk-nav-header uk-text-center">Body (<span class="body-count">0</span> / <span class="body-total">2</span>)</li>
+                <li class="body">Rouška</li>
+                <li class="body">Náramek</li>
+            </ul>
+        </section>
+    </main>
+
+    <aside class="fixed fixed--bottom">
+        <progress class="uk-progress progress-bar" value="0" max="17"></progress>
+    </aside>
+
+    <div id="allDoneOverlay" class="overlay bg-green">
+        <h2>You have everything!</h2>
+        <span uk-icon="icon: check; ratio: 3;" class="check-icon"></span>
+        <p class="uk-text-lead uk-text-light">You can leave the house.</p>
+    </div>
+
+    <script defer src="./dist/index.js"></script>
+</body>
+</html>
