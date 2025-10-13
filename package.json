@@ -46,7 +46,7 @@
     "gulp-tap": "^2.0.0",
     "gulp-uglify": "^3.0.2",
     "gulp-uglify-es": "^3.0.0",
-    "lighthouse": "^12.3.0",
+    "lighthouse": "^13.0.0",
     "postcss-calc": "^10.0.0",
     "postcss-custom-media": "^11.0.0",
     "postcss-custom-properties": "^14.0.0",
