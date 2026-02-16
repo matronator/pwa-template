@@ -34,7 +34,7 @@
     "cssnano": "^7.0.0",
     "del": "^8.0.0",
     "dotenv": "^17.0.0",
-    "eslint": "^9.0.0",
+    "eslint": "^10.0.0",
     "gulp": "^5.0.0",
     "gulp-filenames": "^4.0.1",
     "gulp-imagemin": "^9.0.0",
